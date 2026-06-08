@@ -55,7 +55,7 @@ export default function Home() {
           </p>
 
           <form onSubmit={handleSearchSubmit} style={{ maxWidth: "600px", margin: "0 auto 40px", position: "relative" }}>
-            <div style={{ display: "flex", gap: "12px", background: "rgba(15, 22, 42, 0.6)", padding: "8px", borderRadius: "14px", border: "1px solid var(--border-glass)" }}>
+            <div style={{ display: "flex", gap: "12px", background: "#ffffff", padding: "8px", borderRadius: "14px", border: "1px solid var(--border-glass)" }}>
               <input
                 type="text"
                 className="form-control"
@@ -82,7 +82,7 @@ export default function Home() {
       </header>
 
       {/* Categories Section */}
-      <section className="section-padding" style={{ background: "rgba(15, 22, 42, 0.3)" }}>
+      <section className="section-padding" style={{ background: "rgba(16, 185, 129, 0.03)" }}>
         <div className="container">
           <div style={{ textAlign: "center", marginBottom: "48px" }}>
             <h2 style={{ fontSize: "32px", marginBottom: "12px" }}>Browse by Service Category</h2>

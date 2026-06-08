@@ -233,7 +233,7 @@ export default function AdminDashboard() {
                   <tbody>
                     {users.map((item) => (
                       <tr key={item.id}>
-                        <td style={{ fontWeight: "600", color: "white" }}>{item.name}</td>
+                        <td style={{ fontWeight: "600", color: "var(--text-main)" }}>{item.name}</td>
                         <td>{item.email}</td>
                         <td>
                           <span className="badge badge-confirmed" style={{ background: item.role === "admin" ? "rgba(168,85,247,0.15)" : item.role === "provider" ? "rgba(99,102,241,0.15)" : "rgba(255,255,255,0.05)", color: item.role === "admin" ? "var(--secondary)" : item.role === "provider" ? "var(--primary)" : "var(--text-muted)" }}>
@@ -285,7 +285,7 @@ export default function AdminDashboard() {
                     {services.map((service) => (
                       <tr key={service.id}>
                         <td style={{ fontWeight: "500" }}>{service.providerName}</td>
-                        <td style={{ fontWeight: "600", color: "white" }}>{service.title}</td>
+                        <td style={{ fontWeight: "600", color: "var(--text-main)" }}>{service.title}</td>
                         <td><span className="badge badge-confirmed" style={{ background: "rgba(99, 102, 241, 0.15)" }}>{service.category}</span></td>
                         <td style={{ fontWeight: "bold" }}>${service.price}/hr</td>
                         <td style={{ color: "var(--warning)" }}>★ {service.rating.toFixed(1)}</td>
@@ -340,7 +340,7 @@ export default function AdminDashboard() {
                     <tbody>
                       {reviews.map((review) => (
                         <tr key={review.id}>
-                          <td style={{ fontWeight: "600", color: "white" }}>{review.customerName}</td>
+                          <td style={{ fontWeight: "600", color: "var(--text-main)" }}>{review.customerName}</td>
                           <td>{review.serviceId}</td>
                           <td style={{ color: "var(--warning)" }}>{"★".repeat(review.rating)}</td>
                           <td style={{ maxWidth: "300px", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap", color: "var(--text-muted)" }}>

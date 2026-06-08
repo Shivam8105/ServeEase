@@ -292,9 +292,9 @@ export default function ServiceDetail() {
                   <span>Duration:</span>
                   <span>{hours} {hours === 1 ? "hour" : "hours"}</span>
                 </div>
-                <div style={{ display: "flex", justifyContent: "space-between", fontSize: "16px", fontWeight: "700", borderTop: "1px solid rgba(255,255,255,0.05)", paddingTop: "10px" }}>
+                <div style={{ display: "flex", justifyContent: "space-between", fontSize: "16px", fontWeight: "700", borderTop: "1px solid rgba(255, 255, 255, 0.05)", paddingTop: "10px" }}>
                   <span>Est. Total:</span>
-                  <span style={{ color: "white" }}>${totalPrice}</span>
+                  <span style={{ color: "var(--text-main)" }}>${totalPrice}</span>
                 </div>
               </div>
 

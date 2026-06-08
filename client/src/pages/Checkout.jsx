@@ -157,30 +157,30 @@ export default function Checkout() {
           <div className="glass-panel" style={{ padding: "30px" }}>
             <h2 style={{ fontSize: "22px", marginBottom: "20px" }}>Order Summary</h2>
             
-            <div style={{ marginBottom: "20px", paddingBottom: "20px", borderBottom: "1px solid rgba(255, 255, 255, 0.05)" }}>
-              <h3 style={{ fontSize: "16px", color: "white", marginBottom: "8px" }}>{booking.serviceTitle}</h3>
+            <div style={{ marginBottom: "20px", paddingBottom: "20px", borderBottom: "1px solid rgba(0, 0, 0, 0.05)" }}>
+              <h3 style={{ fontSize: "16px", color: "var(--text-main)", marginBottom: "8px" }}>{booking.serviceTitle}</h3>
               <p style={{ fontSize: "14px", color: "var(--text-muted)" }}>Provider: {booking.providerName}</p>
             </div>
 
             <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "14px", color: "var(--text-muted)" }}>
               <div style={{ display: "flex", justifyContent: "space-between" }}>
                 <span>Scheduled Date</span>
-                <span style={{ color: "white", fontWeight: "600" }}>{booking.date}</span>
+                <span style={{ color: "var(--text-main)", fontWeight: "600" }}>{booking.date}</span>
               </div>
               <div style={{ display: "flex", justifyContent: "space-between" }}>
                 <span>Time Window</span>
-                <span style={{ color: "white", fontWeight: "600" }}>{booking.timeSlot}</span>
+                <span style={{ color: "var(--text-main)", fontWeight: "600" }}>{booking.timeSlot}</span>
               </div>
               <div style={{ display: "flex", justifyContent: "space-between" }}>
                 <span>Duration</span>
-                <span style={{ color: "white", fontWeight: "600" }}>{booking.hours} hours</span>
+                <span style={{ color: "var(--text-main)", fontWeight: "600" }}>{booking.hours} hours</span>
               </div>
               <div style={{ display: "flex", justifyContent: "space-between" }}>
                 <span>Hourly Price</span>
-                <span style={{ color: "white", fontWeight: "600" }}>${booking.totalPrice / booking.hours}/hr</span>
+                <span style={{ color: "var(--text-main)", fontWeight: "600" }}>${booking.totalPrice / booking.hours}/hr</span>
               </div>
               
-              <div style={{ display: "flex", justifyContent: "space-between", fontSize: "18px", fontWeight: "800", color: "white", borderTop: "1px dashed rgba(255, 255, 255, 0.1)", paddingTop: "16px", marginTop: "8px" }}>
+              <div style={{ display: "flex", justifyContent: "space-between", fontSize: "18px", fontWeight: "800", color: "var(--text-main)", borderTop: "1px dashed rgba(0, 0, 0, 0.1)", paddingTop: "16px", marginTop: "8px" }}>
                 <span>Amount Due</span>
                 <span style={{ color: "var(--primary)" }}>${booking.totalPrice}</span>
               </div>
@@ -284,29 +284,29 @@ export default function Checkout() {
 
             <div className="receipt-line">
               <span>Receipt ID</span>
-              <span style={{ color: "white" }}>{booking.paymentDetails?.transactionId || "N/A"}</span>
+              <span style={{ color: "var(--text-main)" }}>{booking.paymentDetails?.transactionId || "N/A"}</span>
             </div>
             <div className="receipt-line">
               <span>Service Title</span>
-              <span style={{ color: "white", textAlign: "right", maxWidth: "200px", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+              <span style={{ color: "var(--text-main)", textAlign: "right", maxWidth: "200px", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
                 {booking.serviceTitle}
               </span>
             </div>
             <div className="receipt-line">
               <span>Provider</span>
-              <span style={{ color: "white" }}>{booking.providerName}</span>
+              <span style={{ color: "var(--text-main)" }}>{booking.providerName}</span>
             </div>
             <div className="receipt-line">
               <span>Scheduled Date</span>
-              <span style={{ color: "white" }}>{booking.date}</span>
+              <span style={{ color: "var(--text-main)" }}>{booking.date}</span>
             </div>
             <div className="receipt-line">
               <span>Time Slot</span>
-              <span style={{ color: "white" }}>{booking.timeSlot}</span>
+              <span style={{ color: "var(--text-main)" }}>{booking.timeSlot}</span>
             </div>
             <div className="receipt-line">
               <span>Payment Type</span>
-              <span style={{ color: "white" }}>{booking.paymentDetails?.cardBrand || "Credit Card"} (**** {booking.paymentDetails?.cardLast4 || "4242"})</span>
+              <span style={{ color: "var(--text-main)" }}>{booking.paymentDetails?.cardBrand || "Credit Card"} (**** {booking.paymentDetails?.cardLast4 || "4242"})</span>
             </div>
 
             <div className="receipt-line receipt-total">

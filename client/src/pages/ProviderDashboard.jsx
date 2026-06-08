@@ -248,7 +248,7 @@ export default function ProviderDashboard() {
                     <tbody>
                       {bookings.map((booking) => (
                         <tr key={booking.id}>
-                          <td style={{ fontWeight: "600", color: "white" }}>{booking.customerName}</td>
+                          <td style={{ fontWeight: "600", color: "var(--text-main)" }}>{booking.customerName}</td>
                           <td>{booking.serviceTitle}</td>
                           <td>
                             <div style={{ fontWeight: "500" }}>{booking.date}</div>
@@ -330,7 +330,7 @@ export default function ProviderDashboard() {
                           <td>
                             <img src={service.image} alt={service.title} style={{ width: "60px", height: "45px", objectFit: "cover", borderRadius: "4px" }} />
                           </td>
-                          <td style={{ fontWeight: "600", color: "white" }}>{service.title}</td>
+                          <td style={{ fontWeight: "600", color: "var(--text-main)" }}>{service.title}</td>
                           <td><span className="badge badge-confirmed" style={{ background: "rgba(99, 102, 241, 0.15)" }}>{service.category}</span></td>
                           <td style={{ fontSize: "15px", fontWeight: "700" }}>${service.price}/hr</td>
                           <td style={{ color: "var(--warning)", fontWeight: "600" }}>★ {service.rating.toFixed(1)}</td>
@@ -360,11 +360,11 @@ export default function ProviderDashboard() {
               <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
                 <div style={{ display: "grid", gridTemplateColumns: "150px 1fr", borderBottom: "1px solid rgba(255, 255, 255, 0.05)", paddingBottom: "12px" }}>
                   <span style={{ color: "var(--text-muted)" }}>Provider Name:</span>
-                  <strong style={{ color: "white" }}>{user.name}</strong>
+                  <strong style={{ color: "var(--text-main)" }}>{user.name}</strong>
                 </div>
                 <div style={{ display: "grid", gridTemplateColumns: "150px 1fr", borderBottom: "1px solid rgba(255, 255, 255, 0.05)", paddingBottom: "12px" }}>
                   <span style={{ color: "var(--text-muted)" }}>Email Address:</span>
-                  <strong style={{ color: "white" }}>{user.email}</strong>
+                  <strong style={{ color: "var(--text-main)" }}>{user.email}</strong>
                 </div>
                 <div style={{ display: "grid", gridTemplateColumns: "150px 1fr", borderBottom: "1px solid rgba(255, 255, 255, 0.05)", paddingBottom: "12px" }}>
                   <span style={{ color: "var(--text-muted)" }}>Account Type:</span>
@@ -372,7 +372,7 @@ export default function ProviderDashboard() {
                 </div>
                 <div style={{ display: "grid", gridTemplateColumns: "150px 1fr" }}>
                   <span style={{ color: "var(--text-muted)" }}>Joined Platform:</span>
-                  <strong style={{ color: "white" }}>{new Date(user.createdAt).toLocaleDateString()}</strong>
+                  <strong style={{ color: "var(--text-main)" }}>{new Date(user.createdAt).toLocaleDateString()}</strong>
                 </div>
               </div>
             </div>

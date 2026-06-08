@@ -209,7 +209,7 @@ export default function CustomerDashboard() {
                       <tbody>
                         {bookings.map((booking) => (
                           <tr key={booking.id}>
-                            <td style={{ fontWeight: "600", color: "white" }}>{booking.serviceTitle}</td>
+                            <td style={{ fontWeight: "600", color: "var(--text-main)" }}>{booking.serviceTitle}</td>
                             <td>{booking.providerName}</td>
                             <td>
                               <div style={{ fontWeight: "500" }}>{booking.date}</div>
@@ -263,11 +263,11 @@ export default function CustomerDashboard() {
               <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
                 <div style={{ display: "grid", gridTemplateColumns: "150px 1fr", borderBottom: "1px solid rgba(255, 255, 255, 0.05)", paddingBottom: "12px" }}>
                   <span style={{ color: "var(--text-muted)" }}>Full Name:</span>
-                  <strong style={{ color: "white" }}>{user.name}</strong>
+                  <strong style={{ color: "var(--text-main)" }}>{user.name}</strong>
                 </div>
                 <div style={{ display: "grid", gridTemplateColumns: "150px 1fr", borderBottom: "1px solid rgba(255, 255, 255, 0.05)", paddingBottom: "12px" }}>
                   <span style={{ color: "var(--text-muted)" }}>Email Address:</span>
-                  <strong style={{ color: "white" }}>{user.email}</strong>
+                  <strong style={{ color: "var(--text-main)" }}>{user.email}</strong>
                 </div>
                 <div style={{ display: "grid", gridTemplateColumns: "150px 1fr", borderBottom: "1px solid rgba(255, 255, 255, 0.05)", paddingBottom: "12px" }}>
                   <span style={{ color: "var(--text-muted)" }}>Account Role:</span>
@@ -275,7 +275,7 @@ export default function CustomerDashboard() {
                 </div>
                 <div style={{ display: "grid", gridTemplateColumns: "150px 1fr" }}>
                   <span style={{ color: "var(--text-muted)" }}>Registered Since:</span>
-                  <strong style={{ color: "white" }}>{new Date(user.createdAt).toLocaleDateString()}</strong>
+                  <strong style={{ color: "var(--text-main)" }}>{new Date(user.createdAt).toLocaleDateString()}</strong>
                 </div>
               </div>
             </div>
